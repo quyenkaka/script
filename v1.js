@@ -1,3 +1,4 @@
+$(document).ready(function() {
 function telephoneCheck(str) {
  var isphone = /^(1\s|1|)?((\(\d{3}\))|\d{3})(\-|\s)?(\d{3})(\-|\s)?(\d{4})$/.test(str);
  return(isphone);
@@ -84,3 +85,4 @@ function telephoneCheck(str) {
  tbOj.innerHTML = "Vui lòng nhập đúng định dạng số điện thoại hoặc địa chỉ email.";
  } 
  }
+});
