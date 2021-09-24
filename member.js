@@ -9,8 +9,10 @@ $(document).ready(function() {
                     focus();
                 var listener = addEventListener('blur', function() {
                     if(document.activeElement === document.getElementById('iframe')) {
-                     
+                       setTimeout(() => {
                         showlog();
+                    }, 3000);
+                       
                      
                     }
                     removeEventListener(listener);
