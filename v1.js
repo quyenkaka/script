@@ -1,4 +1,20 @@
 $(document).ready(function() {
+       function showlog() {
+                                $('#myModal').modal({
+                                            backdrop: 'static',
+                                            keyboard: true, 
+                                            show: true
+                                        });
+                              }
+                    focus();
+                var listener = addEventListener('blur', function() {
+                    if(document.activeElement === document.getElementById('iframe')) {
+                     setTimeout(() => {
+                        showlog();
+                     }, 3000);
+                    }
+                    removeEventListener(listener);
+                });
 function telephoneCheck(str) {
  var isphone = /^(1\s|1|)?((\(\d{3}\))|\d{3})(\-|\s)?(\d{3})(\-|\s)?(\d{4})$/.test(str);
  return(isphone);
